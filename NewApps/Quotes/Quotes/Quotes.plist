@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Quotes</key>
+	<array>
+		<dict>
+			<key>QuoteList</key>
+			<array>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+			</array>
+			<key>QuoteType</key>
+			<string>Type1</string>
+		</dict>
+	</array>
+</dict>
+</plist>
