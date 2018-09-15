@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC136810214D3D0D00FAEC7B /* KWFontPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13680D214D3D0D00FAEC7B /* KWFontPicker.m */; };
+		FC136811214D3D0D00FAEC7B /* KWTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13680E214D3D0D00FAEC7B /* KWTextEditor.m */; };
+		FC136813214D8A0200FAEC7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC136812214D8A0200FAEC7B /* Assets.xcassets */; };
 		FC693B50214C9BD600891C1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC693B4F214C9BD600891C1D /* AppDelegate.swift */; };
 		FC693B52214C9BD600891C1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC693B51214C9BD600891C1D /* ViewController.swift */; };
 		FC693B55214C9BD600891C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC693B53214C9BD600891C1D /* Main.storyboard */; };
-		FC693B57214C9BD900891C1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC693B56214C9BD900891C1D /* Assets.xcassets */; };
 		FC693B5A214C9BD900891C1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC693B58214C9BD900891C1D /* LaunchScreen.storyboard */; };
 		FC693B62214CAB2E00891C1D /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC693B61214CAB2E00891C1D /* MyCustomCell.swift */; };
 		FC693B64214CBAE800891C1D /* Contries.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC693B63214CBAE800891C1D /* Contries.plist */; };
@@ -23,11 +25,16 @@
 		40457151E9B8CC12831C1B4C /* Pods-Quotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quotes/Pods-Quotes.release.xcconfig"; sourceTree = "<group>"; };
 		8AB62B2BFE71544B8A1E1617 /* Pods_Quotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0700B378D9A896E54CA20AE /* Pods-Quotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quotes/Pods-Quotes.debug.xcconfig"; sourceTree = "<group>"; };
+		FC136800214D3CB700FAEC7B /* Quotes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quotes-Bridging-Header.h"; sourceTree = "<group>"; };
+		FC13680C214D3D0D00FAEC7B /* KWTextEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWTextEditor.h; sourceTree = "<group>"; };
+		FC13680D214D3D0D00FAEC7B /* KWFontPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWFontPicker.m; sourceTree = "<group>"; };
+		FC13680E214D3D0D00FAEC7B /* KWTextEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWTextEditor.m; sourceTree = "<group>"; };
+		FC13680F214D3D0D00FAEC7B /* KWFontPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWFontPicker.h; sourceTree = "<group>"; };
+		FC136812214D8A0200FAEC7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC693B4C214C9BD600891C1D /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC693B4F214C9BD600891C1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC693B51214C9BD600891C1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC693B54214C9BD600891C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FC693B56214C9BD900891C1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC693B59214C9BD900891C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC693B5B214C9BD900891C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC693B61214CAB2E00891C1D /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
@@ -65,6 +72,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FC13680B214D3D0D00FAEC7B /* KWFontPicker */ = {
+			isa = PBXGroup;
+			children = (
+				FC13680C214D3D0D00FAEC7B /* KWTextEditor.h */,
+				FC13680E214D3D0D00FAEC7B /* KWTextEditor.m */,
+				FC13680F214D3D0D00FAEC7B /* KWFontPicker.h */,
+				FC13680D214D3D0D00FAEC7B /* KWFontPicker.m */,
+			);
+			path = KWFontPicker;
+			sourceTree = SOURCE_ROOT;
+		};
 		FC693B43214C9BD600891C1D = {
 			isa = PBXGroup;
 			children = (
@@ -86,16 +104,18 @@
 		FC693B4E214C9BD600891C1D /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
+				FC13680B214D3D0D00FAEC7B /* KWFontPicker */,
 				FC693B63214CBAE800891C1D /* Contries.plist */,
 				FC693B4F214C9BD600891C1D /* AppDelegate.swift */,
+				FC136812214D8A0200FAEC7B /* Assets.xcassets */,
 				FC693B51214C9BD600891C1D /* ViewController.swift */,
 				FC693B65214CBC8900891C1D /* Quotes.plist */,
 				FC693B61214CAB2E00891C1D /* MyCustomCell.swift */,
 				FC693B67214CC88A00891C1D /* QuoteDetailViewController.swift */,
 				FC693B53214C9BD600891C1D /* Main.storyboard */,
-				FC693B56214C9BD900891C1D /* Assets.xcassets */,
 				FC693B58214C9BD900891C1D /* LaunchScreen.storyboard */,
 				FC693B5B214C9BD900891C1D /* Info.plist */,
+				FC136800214D3CB700FAEC7B /* Quotes-Bridging-Header.h */,
 			);
 			path = Quotes;
 			sourceTree = "<group>";
@@ -134,6 +154,7 @@
 				TargetAttributes = {
 					FC693B4B214C9BD600891C1D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -161,10 +182,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC693B5A214C9BD900891C1D /* LaunchScreen.storyboard in Resources */,
-				FC693B57214C9BD900891C1D /* Assets.xcassets in Resources */,
 				FC693B55214C9BD600891C1D /* Main.storyboard in Resources */,
 				FC693B66214CBC8900891C1D /* Quotes.plist in Resources */,
 				FC693B64214CBAE800891C1D /* Contries.plist in Resources */,
+				FC136813214D8A0200FAEC7B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,8 +238,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC693B62214CAB2E00891C1D /* MyCustomCell.swift in Sources */,
+				FC136811214D3D0D00FAEC7B /* KWTextEditor.m in Sources */,
 				FC693B52214C9BD600891C1D /* ViewController.swift in Sources */,
 				FC693B68214CC88A00891C1D /* QuoteDetailViewController.swift in Sources */,
+				FC136810214D3D0D00FAEC7B /* KWFontPicker.m in Sources */,
 				FC693B50214C9BD600891C1D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,14 +387,18 @@
 			baseConfigurationReference = E0700B378D9A896E54CA20AE /* Pods-Quotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Quotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.quote.Quotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quotes/Quotes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,14 +409,17 @@
 			baseConfigurationReference = 40457151E9B8CC12831C1B4C /* Pods-Quotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Quotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.quote.Quotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quotes/Quotes-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
