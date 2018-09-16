@@ -1,0 +1,24 @@
+PODS:
+  - IGColorPicker (0.4.2):
+    - M13Checkbox (~> 3.2.0)
+  - Kingfisher (4.9.0)
+  - M13Checkbox (3.2.2)
+
+DEPENDENCIES:
+  - IGColorPicker
+  - Kingfisher
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IGColorPicker
+    - Kingfisher
+    - M13Checkbox
+
+SPEC CHECKSUMS:
+  IGColorPicker: c6d43aa386a9fdc8f958f3bd4e5ab85905242c8a
+  Kingfisher: 64539b51826b778206daa6ed815d12653caa69dd
+  M13Checkbox: a8c2491cfbbca10797925fd0b9154a782bf40d89
+
+PODFILE CHECKSUM: 500a4af1aed3b871c6f1f4c18a053840724ab442
+
+COCOAPODS: 1.5.3

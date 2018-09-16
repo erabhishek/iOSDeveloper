@@ -46,7 +46,7 @@ class QuoteDetailViewController: UIViewController, ColorPickerViewDelegate, Colo
         
         quotesGesture()
         writerGesture()
-//        writerImageGesture()
+        writerImageGesture()
 
         quoteFrame = self.tfQuoteTextOutlet.frame
         quoteWriterFrame = self.tfQuoteWriterOutlet.frame
@@ -72,10 +72,10 @@ class QuoteDetailViewController: UIViewController, ColorPickerViewDelegate, Colo
         self.tfQuoteTextOutlet.addGestureRecognizer(panGestureRecognizer)
         self.tfQuoteTextOutlet.backgroundColor = UIColor.clear
         
-//        var pinchGesture  = UIPinchGestureRecognizer()
-//        pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(QuoteDetailViewController.pinchedView))
-//        self.tfQuoteTextOutlet.isUserInteractionEnabled = true
-//        self.tfQuoteTextOutlet.addGestureRecognizer(pinchGesture)
+        var pinchGesture  = UIPinchGestureRecognizer()
+        pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(QuoteDetailViewController.pinchedView))
+        self.tfQuoteTextOutlet.isUserInteractionEnabled = true
+        self.tfQuoteTextOutlet.addGestureRecognizer(pinchGesture)
     }
     
     fileprivate func writerGesture() {
@@ -84,10 +84,10 @@ class QuoteDetailViewController: UIViewController, ColorPickerViewDelegate, Colo
         self.tfQuoteWriterOutlet.addGestureRecognizer(panGestureRecognizer)
         self.tfQuoteWriterOutlet.backgroundColor = UIColor.clear
         
-//        var pinchGesture  = UIPinchGestureRecognizer()
-//        pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(QuoteDetailViewController.pinchedViewWriter))
-//        self.tfQuoteWriterOutlet.isUserInteractionEnabled = true
-//        self.tfQuoteWriterOutlet.addGestureRecognizer(pinchGesture)
+        var pinchGesture  = UIPinchGestureRecognizer()
+        pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(QuoteDetailViewController.pinchedViewWriter))
+        self.tfQuoteWriterOutlet.isUserInteractionEnabled = true
+        self.tfQuoteWriterOutlet.addGestureRecognizer(pinchGesture)
     }
     fileprivate func writerImageGesture() {
         let panGestureRecognizer = UIPanGestureRecognizer(target:self, action:#selector(QuoteDetailViewController.panGestureDetectedWriterImage))
@@ -264,30 +264,30 @@ class QuoteDetailViewController: UIViewController, ColorPickerViewDelegate, Colo
         }else{
             writerimage.isHidden = false
 
-//        let alert = UIAlertController(title: "Choose Image", message: nil, preferredStyle: .actionSheet)
-//        alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { _ in
-//            self.openCamera()
-//        }))
-//
-//        alert.addAction(UIAlertAction(title: "Gallery", style: .default, handler: { _ in
-//            self.openGallary()
-//        }))
-//
-//        alert.addAction(UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil))
-//
-//        /*If you want work actionsheet on ipad
-//         then you have to use popoverPresentationController to present the actionsheet,
-//         otherwise app will crash on iPad */
-//        switch UIDevice.current.userInterfaceIdiom {
-//        case .pad:
-//            alert.popoverPresentationController?.sourceView = sender
-//            alert.popoverPresentationController?.sourceRect = sender.bounds
-//            alert.popoverPresentationController?.permittedArrowDirections = .up
-//        default:
-//            break
-//        }
-//
-//        self.present(alert, animated: true, completion: nil)
+        let alert = UIAlertController(title: "Choose Image", message: nil, preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { _ in
+            self.openCamera()
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Gallery", style: .default, handler: { _ in
+            self.openGallary()
+        }))
+        
+        alert.addAction(UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil))
+        
+        /*If you want work actionsheet on ipad
+         then you have to use popoverPresentationController to present the actionsheet,
+         otherwise app will crash on iPad */
+        switch UIDevice.current.userInterfaceIdiom {
+        case .pad:
+            alert.popoverPresentationController?.sourceView = sender
+            alert.popoverPresentationController?.sourceRect = sender.bounds
+            alert.popoverPresentationController?.permittedArrowDirections = .up
+        default:
+            break
+        }
+        
+        self.present(alert, animated: true, completion: nil)
         }
     }
 

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Quotes</key>
+	<array>
+		<dict>
+			<key>QuoteType</key>
+			<string>A. A. Milne</string>
+			<key>QuoteList</key>
+			<array>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>QuoteType</key>
+			<string>A. P. J. Abdul Kalam</string>
+			<key>QuoteList</key>
+			<array>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>QuoteType</key>
+			<string>Aaron Rodgers</string>
+			<key>QuoteList</key>
+			<array>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>QuoteType</key>
+			<string>H. G. Wells</string>
+			<key>QuoteList</key>
+			<array>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>QuoteType</key>
+			<string>Immanuel Kant</string>
+			<key>QuoteList</key>
+			<array>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>QuoteType</key>
+			<string>James Joyce</string>
+			<key>QuoteList</key>
+			<array>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+				<dict>
+					<key>writtenby</key>
+					<string>Abhishek</string>
+					<key>image</key>
+					<string>No Image</string>
+					<key>text</key>
+					<string>Creative Persion</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
