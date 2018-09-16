@@ -10,25 +10,33 @@
 
 import UIKit
 import IGColorPicker
+import Kingfisher
 
-class QuoteDetailViewController: UIViewController, ColorPickerViewDelegate, ColorPickerViewDelegateFlowLayout {
+
+class QuoteDetailViewController: UIViewController, ColorPickerViewDelegate, ColorPickerViewDelegateFlowLayout , UIImagePickerControllerDelegate , UINavigationControllerDelegate {
+    
+    
+    var quoteWrittenby = String()
+    var quoteImage = String()
+    var quoteText = String()
+    
     
     @IBOutlet weak var colorPickerView: ColorPickerView!
     @IBOutlet weak var tfQuoteTextOutlet: UITextView!
     @IBOutlet weak var tfQuoteWriterOutlet: UITextView!
     @IBOutlet weak var optionViewOutlet: UIView!
     @IBOutlet weak var writerimage: UIImageView!
-    
+    var imagePicker = UIImagePickerController()
     var quoteAlignment = Int()
     
     var quoteFrame = CGRect()
     var quoteWriterFrame = CGRect()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
+        self.writerimage.isHidden = true
         self.tfQuoteWriterOutlet.textContainer.maximumNumberOfLines = 10
         self.tfQuoteWriterOutlet.textContainer.lineBreakMode = .byTruncatingTail
         
@@ -40,12 +48,22 @@ class QuoteDetailViewController: UIViewController, ColorPickerViewDelegate, Colo
         writerGesture()
         writerImageGesture()
 
-        
-        
-        
         quoteFrame = self.tfQuoteTextOutlet.frame
         quoteWriterFrame = self.tfQuoteWriterOutlet.frame
         self.colorPickerView.isHidden  = true
+        self.imagePicker.delegate = self
+        
+        
+
+        if self.quoteImage.count != 0 {
+            let image = UIImage(named: "placeholder")
+            let url = URL(string: quoteImage)
+            self.writerimage.kf.setImage(with: url, placeholder: image)
+            self.writerimage.isHidden = false
+            self.tfQuoteTextOutlet.text = quoteText
+            self.tfQuoteWriterOutlet.text = quoteWrittenby
+        }
+        
         
     }
     fileprivate func quotesGesture() {
@@ -98,6 +116,9 @@ class QuoteDetailViewController: UIViewController, ColorPickerViewDelegate, Colo
         self.view.bringSubview(toFront: self.tfQuoteTextOutlet)
         sender.view?.transform = (sender.view?.transform)!.scaledBy(x: sender.scale, y: sender.scale)
         sender.scale = 1.0
+        self.view.bringSubview(toFront: self.tfQuoteWriterOutlet)
+        self.view.bringSubview(toFront: self.tfQuoteTextOutlet)
+          self.view.bringSubview(toFront: self.optionViewOutlet)
     }
     
     @objc func panGestureDetected(panGestureRecognizer: UIPanGestureRecognizer) {
@@ -106,12 +127,17 @@ class QuoteDetailViewController: UIViewController, ColorPickerViewDelegate, Colo
         self.tfQuoteTextOutlet.center = touchLocation!
         let velocity: CGPoint? = panGestureRecognizer.velocity(in: view)
         tfQuoteTextOutlet.centerVertically()
+  
     }
     
     @objc func pinchedViewWriter(sender:UIPinchGestureRecognizer){
         self.view.bringSubview(toFront: self.tfQuoteWriterOutlet)
         sender.view?.transform = (sender.view?.transform)!.scaledBy(x: sender.scale, y: sender.scale)
         sender.scale = 1.0
+        self.view.bringSubview(toFront: self.tfQuoteWriterOutlet)
+        self.view.bringSubview(toFront: self.tfQuoteTextOutlet)
+           self.view.bringSubview(toFront: self.optionViewOutlet)
+
     }
     
     @objc func panGestureDetectedWriter(panGestureRecognizer: UIPanGestureRecognizer) {
@@ -120,12 +146,16 @@ class QuoteDetailViewController: UIViewController, ColorPickerViewDelegate, Colo
         self.tfQuoteWriterOutlet.center = touchLocation!
         let velocity: CGPoint? = panGestureRecognizer.velocity(in: view)
         tfQuoteWriterOutlet.centerVertically()
+   
     }
     
     @objc func pinchedViewWriterImage(sender:UIPinchGestureRecognizer){
         self.view.bringSubview(toFront: self.writerimage)
         sender.view?.transform = (sender.view?.transform)!.scaledBy(x: sender.scale, y: sender.scale)
         sender.scale = 1.0
+        self.view.bringSubview(toFront: self.tfQuoteWriterOutlet)
+        self.view.bringSubview(toFront: self.tfQuoteTextOutlet)
+           self.view.bringSubview(toFront: self.optionViewOutlet)
     }
     
     @objc func panGestureDetectedWriterImage(panGestureRecognizer: UIPanGestureRecognizer) {
@@ -133,6 +163,7 @@ class QuoteDetailViewController: UIViewController, ColorPickerViewDelegate, Colo
         let touchLocation: CGPoint? = panGestureRecognizer.location(in: view)
         self.writerimage.center = touchLocation!
         let velocity: CGPoint? = panGestureRecognizer.velocity(in: view)
+     
     }
     
     
@@ -200,12 +231,77 @@ class QuoteDetailViewController: UIViewController, ColorPickerViewDelegate, Colo
     }
     
     @IBAction func btAddimageAction(_ sender: UIButton) {
-  
-    
+        pickImage(sender: sender)
     }
     
-    @IBAction func btAddBackgroundImageAction(_ sender: UIButton) {
+    func openCamera()
+    {
+        if(UIImagePickerController .isSourceTypeAvailable(UIImagePickerControllerSourceType.camera))
+        {
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera
+            imagePicker.allowsEditing = true
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+        else
+        {
+            let alert  = UIAlertController(title: "Warning", message: "You don't have camera", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
     
+    func openGallary()
+    {
+        imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        imagePicker.allowsEditing = true
+        self.present(imagePicker, animated: true, completion: nil)
+    }
+    
+     func pickImage(sender: UIButton)
+    {
+        if(!writerimage.isHidden){
+            writerimage.isHidden = true
+        }else{
+            writerimage.isHidden = false
+
+        let alert = UIAlertController(title: "Choose Image", message: nil, preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { _ in
+            self.openCamera()
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Gallery", style: .default, handler: { _ in
+            self.openGallary()
+        }))
+        
+        alert.addAction(UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil))
+        
+        /*If you want work actionsheet on ipad
+         then you have to use popoverPresentationController to present the actionsheet,
+         otherwise app will crash on iPad */
+        switch UIDevice.current.userInterfaceIdiom {
+        case .pad:
+            alert.popoverPresentationController?.sourceView = sender
+            alert.popoverPresentationController?.sourceRect = sender.bounds
+            alert.popoverPresentationController?.permittedArrowDirections = .up
+        default:
+            break
+        }
+        
+        self.present(alert, animated: true, completion: nil)
+        }
+    }
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+//             self.writerimage.image.contentMode = .scaleToFill
+            self.writerimage.image = pickedImage
+            self.writerimage.isHidden =  false
+            
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func btAddBackgroundImageAction(_ sender: UIButton) {
+        pickImage(sender: sender)
     
     }
     
@@ -218,9 +314,9 @@ class QuoteDetailViewController: UIViewController, ColorPickerViewDelegate, Colo
         layer.render(in:context)
         screenshotImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        if let image = screenshotImage, shouldSave {
-            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-        }
+//        if let image = screenshotImage, shouldSave {
+//            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+//        }
         return screenshotImage
     }
     @IBAction func btShareAction(_ sender: Any) {

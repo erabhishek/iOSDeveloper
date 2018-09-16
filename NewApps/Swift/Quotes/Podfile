@@ -7,4 +7,7 @@ target 'Quotes' do
 
   # Pods for Quotes
 	pod 'IGColorPicker'
+	pod 'Kingfisher'
+
+
 end

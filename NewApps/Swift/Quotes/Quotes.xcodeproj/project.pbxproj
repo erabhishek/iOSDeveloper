@@ -10,12 +10,12 @@
 		FC136810214D3D0D00FAEC7B /* KWFontPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13680D214D3D0D00FAEC7B /* KWFontPicker.m */; };
 		FC136811214D3D0D00FAEC7B /* KWTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = FC13680E214D3D0D00FAEC7B /* KWTextEditor.m */; };
 		FC136813214D8A0200FAEC7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC136812214D8A0200FAEC7B /* Assets.xcassets */; };
+		FC136815214DBB1B00FAEC7B /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC136814214DBB1B00FAEC7B /* Quote.swift */; };
 		FC693B50214C9BD600891C1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC693B4F214C9BD600891C1D /* AppDelegate.swift */; };
-		FC693B52214C9BD600891C1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC693B51214C9BD600891C1D /* ViewController.swift */; };
+		FC693B52214C9BD600891C1D /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC693B51214C9BD600891C1D /* QuoteViewController.swift */; };
 		FC693B55214C9BD600891C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC693B53214C9BD600891C1D /* Main.storyboard */; };
 		FC693B5A214C9BD900891C1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC693B58214C9BD900891C1D /* LaunchScreen.storyboard */; };
 		FC693B62214CAB2E00891C1D /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC693B61214CAB2E00891C1D /* MyCustomCell.swift */; };
-		FC693B64214CBAE800891C1D /* Contries.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC693B63214CBAE800891C1D /* Contries.plist */; };
 		FC693B66214CBC8900891C1D /* Quotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC693B65214CBC8900891C1D /* Quotes.plist */; };
 		FC693B68214CC88A00891C1D /* QuoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC693B67214CC88A00891C1D /* QuoteDetailViewController.swift */; };
 		FCDBB86C785682759A5007E5 /* Pods_Quotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB62B2BFE71544B8A1E1617 /* Pods_Quotes.framework */; };
@@ -31,14 +31,14 @@
 		FC13680E214D3D0D00FAEC7B /* KWTextEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWTextEditor.m; sourceTree = "<group>"; };
 		FC13680F214D3D0D00FAEC7B /* KWFontPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWFontPicker.h; sourceTree = "<group>"; };
 		FC136812214D8A0200FAEC7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC136814214DBB1B00FAEC7B /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		FC693B4C214C9BD600891C1D /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC693B4F214C9BD600891C1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC693B51214C9BD600891C1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC693B51214C9BD600891C1D /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		FC693B54214C9BD600891C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC693B59214C9BD900891C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC693B5B214C9BD900891C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC693B61214CAB2E00891C1D /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
-		FC693B63214CBAE800891C1D /* Contries.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Contries.plist; sourceTree = "<group>"; };
 		FC693B65214CBC8900891C1D /* Quotes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Quotes.plist; sourceTree = "<group>"; };
 		FC693B67214CC88A00891C1D /* QuoteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,18 +104,18 @@
 		FC693B4E214C9BD600891C1D /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
-				FC13680B214D3D0D00FAEC7B /* KWFontPicker */,
-				FC693B63214CBAE800891C1D /* Contries.plist */,
-				FC693B4F214C9BD600891C1D /* AppDelegate.swift */,
-				FC136812214D8A0200FAEC7B /* Assets.xcassets */,
-				FC693B51214C9BD600891C1D /* ViewController.swift */,
-				FC693B65214CBC8900891C1D /* Quotes.plist */,
 				FC693B61214CAB2E00891C1D /* MyCustomCell.swift */,
+				FC693B4F214C9BD600891C1D /* AppDelegate.swift */,
+				FC693B51214C9BD600891C1D /* QuoteViewController.swift */,
+				FC136814214DBB1B00FAEC7B /* Quote.swift */,
 				FC693B67214CC88A00891C1D /* QuoteDetailViewController.swift */,
+				FC693B65214CBC8900891C1D /* Quotes.plist */,
 				FC693B53214C9BD600891C1D /* Main.storyboard */,
 				FC693B58214C9BD900891C1D /* LaunchScreen.storyboard */,
 				FC693B5B214C9BD900891C1D /* Info.plist */,
 				FC136800214D3CB700FAEC7B /* Quotes-Bridging-Header.h */,
+				FC13680B214D3D0D00FAEC7B /* KWFontPicker */,
+				FC136812214D8A0200FAEC7B /* Assets.xcassets */,
 			);
 			path = Quotes;
 			sourceTree = "<group>";
@@ -184,7 +184,6 @@
 				FC693B5A214C9BD900891C1D /* LaunchScreen.storyboard in Resources */,
 				FC693B55214C9BD600891C1D /* Main.storyboard in Resources */,
 				FC693B66214CBC8900891C1D /* Quotes.plist in Resources */,
-				FC693B64214CBAE800891C1D /* Contries.plist in Resources */,
 				FC136813214D8A0200FAEC7B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,11 +217,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Quotes/Pods-Quotes-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IGColorPicker/IGColorPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGColorPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13Checkbox.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,9 +240,10 @@
 			files = (
 				FC693B62214CAB2E00891C1D /* MyCustomCell.swift in Sources */,
 				FC136811214D3D0D00FAEC7B /* KWTextEditor.m in Sources */,
-				FC693B52214C9BD600891C1D /* ViewController.swift in Sources */,
+				FC693B52214C9BD600891C1D /* QuoteViewController.swift in Sources */,
 				FC693B68214CC88A00891C1D /* QuoteDetailViewController.swift in Sources */,
 				FC136810214D3D0D00FAEC7B /* KWFontPicker.m in Sources */,
+				FC136815214DBB1B00FAEC7B /* Quote.swift in Sources */,
 				FC693B50214C9BD600891C1D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
